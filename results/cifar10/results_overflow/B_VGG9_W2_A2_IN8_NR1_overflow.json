@@ -1,0 +1,945 @@
+{
+  "ckpt": "checkpoints_B/B_VGG9_W2_A2_IN8_NR1.pth",
+  "fhe_json": "results_fhe_B/Profile_B_M1_W2A2_IN8_RndNone.json",
+  "rounding_bits": null,
+  "args": {
+    "ckpt": "checkpoints_B/B_VGG9_W2_A2_IN8_NR1.pth",
+    "fhe_json": "results_fhe_B/Profile_B_M1_W2A2_IN8_RndNone.json",
+    "n_noise": 2000,
+    "adv_images": 128,
+    "adv_steps": 40,
+    "adv_alpha": 0.01,
+    "batch": 256,
+    "seed": 0,
+    "out": "results_overflow"
+  },
+  "layers": {
+    "features.0": {
+      "B_cert": 13,
+      "compiled_bits": 13,
+      "lo": -4096,
+      "hi": 4095,
+      "certified_safe": true
+    },
+    "features.3": {
+      "B_cert": 10,
+      "compiled_bits": 10,
+      "lo": -512,
+      "hi": 511,
+      "certified_safe": true
+    },
+    "features.8": {
+      "B_cert": 9,
+      "compiled_bits": 8,
+      "lo": -128,
+      "hi": 127,
+      "certified_safe": false
+    },
+    "features.11": {
+      "B_cert": 11,
+      "compiled_bits": 9,
+      "lo": -256,
+      "hi": 255,
+      "certified_safe": false
+    },
+    "features.16": {
+      "B_cert": 10,
+      "compiled_bits": 8,
+      "lo": -128,
+      "hi": 127,
+      "certified_safe": false
+    },
+    "features.19": {
+      "B_cert": 12,
+      "compiled_bits": 9,
+      "lo": -256,
+      "hi": 255,
+      "certified_safe": false
+    },
+    "classifier.0": {
+      "B_cert": 8,
+      "compiled_bits": 7,
+      "lo": -64,
+      "hi": 63,
+      "certified_safe": false
+    },
+    "classifier.4": {
+      "B_cert": 10,
+      "compiled_bits": 9,
+      "lo": -256,
+      "hi": 255,
+      "certified_safe": false
+    },
+    "classifier.8": {
+      "B_cert": 12,
+      "compiled_bits": 10,
+      "lo": -512,
+      "hi": 511,
+      "certified_safe": false
+    }
+  },
+  "results": {
+    "natural": {
+      "n": 10000,
+      "images_with_overflow": 0,
+      "frac_with_overflow": 0.0,
+      "layers": {
+        "features.0": {
+          "images": 0,
+          "values": 0,
+          "min": -2520.0,
+          "max": 2465.0
+        },
+        "features.3": {
+          "images": 0,
+          "values": 0,
+          "min": -343.0,
+          "max": 226.0
+        },
+        "features.8": {
+          "images": 0,
+          "values": 0,
+          "min": -80.0,
+          "max": 77.0
+        },
+        "features.11": {
+          "images": 0,
+          "values": 0,
+          "min": -182.0,
+          "max": 122.0
+        },
+        "features.16": {
+          "images": 0,
+          "values": 0,
+          "min": -98.0,
+          "max": 98.0
+        },
+        "features.19": {
+          "images": 0,
+          "values": 0,
+          "min": -209.0,
+          "max": 208.0
+        },
+        "classifier.0": {
+          "images": 0,
+          "values": 0,
+          "min": -38.0,
+          "max": 37.0
+        },
+        "classifier.4": {
+          "images": 0,
+          "values": 0,
+          "min": -194.0,
+          "max": 139.0
+        },
+        "classifier.8": {
+          "images": 0,
+          "values": 0,
+          "min": -375.0,
+          "max": 324.0
+        }
+      }
+    },
+    "constant": {
+      "n": 3,
+      "images_with_overflow": 0,
+      "frac_with_overflow": 0.0,
+      "layers": {
+        "features.0": {
+          "images": 0,
+          "values": 0,
+          "min": -1143.0,
+          "max": 1143.0
+        },
+        "features.3": {
+          "images": 0,
+          "values": 0,
+          "min": -80.0,
+          "max": 92.0
+        },
+        "features.8": {
+          "images": 0,
+          "values": 0,
+          "min": -25.0,
+          "max": 32.0
+        },
+        "features.11": {
+          "images": 0,
+          "values": 0,
+          "min": -50.0,
+          "max": 29.0
+        },
+        "features.16": {
+          "images": 0,
+          "values": 0,
+          "min": -54.0,
+          "max": 46.0
+        },
+        "features.19": {
+          "images": 0,
+          "values": 0,
+          "min": -57.0,
+          "max": 47.0
+        },
+        "classifier.0": {
+          "images": 0,
+          "values": 0,
+          "min": -36.0,
+          "max": 28.0
+        },
+        "classifier.4": {
+          "images": 0,
+          "values": 0,
+          "min": -157.0,
+          "max": 64.0
+        },
+        "classifier.8": {
+          "images": 0,
+          "values": 0,
+          "min": -264.0,
+          "max": 147.0
+        }
+      }
+    },
+    "noise": {
+      "n": 2000,
+      "images_with_overflow": 0,
+      "frac_with_overflow": 0.0,
+      "layers": {
+        "features.0": {
+          "images": 0,
+          "values": 0,
+          "min": -1786.0,
+          "max": 2164.0
+        },
+        "features.3": {
+          "images": 0,
+          "values": 0,
+          "min": -280.0,
+          "max": 212.0
+        },
+        "features.8": {
+          "images": 0,
+          "values": 0,
+          "min": -69.0,
+          "max": 54.0
+        },
+        "features.11": {
+          "images": 0,
+          "values": 0,
+          "min": -85.0,
+          "max": 62.0
+        },
+        "features.16": {
+          "images": 0,
+          "values": 0,
+          "min": -73.0,
+          "max": 52.0
+        },
+        "features.19": {
+          "images": 0,
+          "values": 0,
+          "min": -133.0,
+          "max": 112.0
+        },
+        "classifier.0": {
+          "images": 0,
+          "values": 0,
+          "min": -32.0,
+          "max": 35.0
+        },
+        "classifier.4": {
+          "images": 0,
+          "values": 0,
+          "min": -170.0,
+          "max": 115.0
+        },
+        "classifier.8": {
+          "images": 0,
+          "values": 0,
+          "min": -298.0,
+          "max": 275.0
+        }
+      }
+    },
+    "patterns": {
+      "n": 24,
+      "images_with_overflow": 0,
+      "frac_with_overflow": 0.0,
+      "layers": {
+        "features.0": {
+          "images": 0,
+          "values": 0,
+          "min": -2794.0,
+          "max": 2794.0
+        },
+        "features.3": {
+          "images": 0,
+          "values": 0,
+          "min": -297.0,
+          "max": 251.0
+        },
+        "features.8": {
+          "images": 0,
+          "values": 0,
+          "min": -54.0,
+          "max": 54.0
+        },
+        "features.11": {
+          "images": 0,
+          "values": 0,
+          "min": -112.0,
+          "max": 91.0
+        },
+        "features.16": {
+          "images": 0,
+          "values": 0,
+          "min": -68.0,
+          "max": 64.0
+        },
+        "features.19": {
+          "images": 0,
+          "values": 0,
+          "min": -117.0,
+          "max": 72.0
+        },
+        "classifier.0": {
+          "images": 0,
+          "values": 0,
+          "min": -40.0,
+          "max": 33.0
+        },
+        "classifier.4": {
+          "images": 0,
+          "values": 0,
+          "min": -142.0,
+          "max": 88.0
+        },
+        "classifier.8": {
+          "images": 0,
+          "values": 0,
+          "min": -316.0,
+          "max": 235.0
+        }
+      }
+    },
+    "conv1_worst": {
+      "n": 128,
+      "images_with_overflow": 0,
+      "frac_with_overflow": 0.0,
+      "layers": {
+        "features.0": {
+          "images": 0,
+          "values": 0,
+          "min": -3302.0,
+          "max": 3302.0
+        },
+        "features.3": {
+          "images": 0,
+          "values": 0,
+          "min": -296.0,
+          "max": 209.0
+        },
+        "features.8": {
+          "images": 0,
+          "values": 0,
+          "min": -79.0,
+          "max": 55.0
+        },
+        "features.11": {
+          "images": 0,
+          "values": 0,
+          "min": -103.0,
+          "max": 71.0
+        },
+        "features.16": {
+          "images": 0,
+          "values": 0,
+          "min": -96.0,
+          "max": 60.0
+        },
+        "features.19": {
+          "images": 0,
+          "values": 0,
+          "min": -131.0,
+          "max": 98.0
+        },
+        "classifier.0": {
+          "images": 0,
+          "values": 0,
+          "min": -39.0,
+          "max": 35.0
+        },
+        "classifier.4": {
+          "images": 0,
+          "values": 0,
+          "min": -173.0,
+          "max": 110.0
+        },
+        "classifier.8": {
+          "images": 0,
+          "values": 0,
+          "min": -320.0,
+          "max": 279.0
+        }
+      }
+    },
+    "adversarial": {
+      "n": 1152,
+      "images_with_overflow": 264,
+      "per_target": {
+        "features.0": {
+          "n": 128,
+          "images_with_overflow": 0,
+          "frac_with_overflow": 0.0,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -3048.0,
+              "max": 3048.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -293.0,
+              "max": 217.0
+            },
+            "features.8": {
+              "images": 0,
+              "values": 0,
+              "min": -65.0,
+              "max": 64.0
+            },
+            "features.11": {
+              "images": 0,
+              "values": 0,
+              "min": -157.0,
+              "max": 116.0
+            },
+            "features.16": {
+              "images": 0,
+              "values": 0,
+              "min": -87.0,
+              "max": 91.0
+            },
+            "features.19": {
+              "images": 0,
+              "values": 0,
+              "min": -178.0,
+              "max": 168.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -36.0,
+              "max": 30.0
+            },
+            "classifier.4": {
+              "images": 0,
+              "values": 0,
+              "min": -185.0,
+              "max": 131.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -339.0,
+              "max": 312.0
+            }
+          }
+        },
+        "features.3": {
+          "n": 128,
+          "images_with_overflow": 0,
+          "frac_with_overflow": 0.0,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -2520.0,
+              "max": 2378.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -385.0,
+              "max": 251.0
+            },
+            "features.8": {
+              "images": 0,
+              "values": 0,
+              "min": -67.0,
+              "max": 68.0
+            },
+            "features.11": {
+              "images": 0,
+              "values": 0,
+              "min": -154.0,
+              "max": 116.0
+            },
+            "features.16": {
+              "images": 0,
+              "values": 0,
+              "min": -80.0,
+              "max": 85.0
+            },
+            "features.19": {
+              "images": 0,
+              "values": 0,
+              "min": -168.0,
+              "max": 165.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -35.0,
+              "max": 29.0
+            },
+            "classifier.4": {
+              "images": 0,
+              "values": 0,
+              "min": -188.0,
+              "max": 133.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -359.0,
+              "max": 316.0
+            }
+          }
+        },
+        "features.8": {
+          "n": 128,
+          "images_with_overflow": 1,
+          "frac_with_overflow": 0.0078125,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -2698.0,
+              "max": 2417.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -284.0,
+              "max": 206.0
+            },
+            "features.8": {
+              "images": 1,
+              "values": 1,
+              "min": -131.0,
+              "max": 118.0
+            },
+            "features.11": {
+              "images": 0,
+              "values": 0,
+              "min": -150.0,
+              "max": 93.0
+            },
+            "features.16": {
+              "images": 0,
+              "values": 0,
+              "min": -87.0,
+              "max": 78.0
+            },
+            "features.19": {
+              "images": 0,
+              "values": 0,
+              "min": -169.0,
+              "max": 147.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -33.0,
+              "max": 30.0
+            },
+            "classifier.4": {
+              "images": 0,
+              "values": 0,
+              "min": -182.0,
+              "max": 124.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -310.0,
+              "max": 301.0
+            }
+          }
+        },
+        "features.11": {
+          "n": 128,
+          "images_with_overflow": 13,
+          "frac_with_overflow": 0.1015625,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -2520.0,
+              "max": 2354.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -299.0,
+              "max": 213.0
+            },
+            "features.8": {
+              "images": 0,
+              "values": 0,
+              "min": -72.0,
+              "max": 63.0
+            },
+            "features.11": {
+              "images": 13,
+              "values": 13,
+              "min": -274.0,
+              "max": 124.0
+            },
+            "features.16": {
+              "images": 0,
+              "values": 0,
+              "min": -97.0,
+              "max": 85.0
+            },
+            "features.19": {
+              "images": 0,
+              "values": 0,
+              "min": -150.0,
+              "max": 136.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -38.0,
+              "max": 29.0
+            },
+            "classifier.4": {
+              "images": 0,
+              "values": 0,
+              "min": -180.0,
+              "max": 123.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -360.0,
+              "max": 318.0
+            }
+          }
+        },
+        "features.16": {
+          "n": 128,
+          "images_with_overflow": 121,
+          "frac_with_overflow": 0.9453125,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -2477.0,
+              "max": 2331.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -284.0,
+              "max": 218.0
+            },
+            "features.8": {
+              "images": 0,
+              "values": 0,
+              "min": -73.0,
+              "max": 68.0
+            },
+            "features.11": {
+              "images": 0,
+              "values": 0,
+              "min": -170.0,
+              "max": 115.0
+            },
+            "features.16": {
+              "images": 121,
+              "values": 121,
+              "min": -179.0,
+              "max": 170.0
+            },
+            "features.19": {
+              "images": 0,
+              "values": 0,
+              "min": -156.0,
+              "max": 134.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -32.0,
+              "max": 29.0
+            },
+            "classifier.4": {
+              "images": 0,
+              "values": 0,
+              "min": -168.0,
+              "max": 115.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -343.0,
+              "max": 294.0
+            }
+          }
+        },
+        "features.19": {
+          "n": 128,
+          "images_with_overflow": 128,
+          "frac_with_overflow": 1.0,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -2247.0,
+              "max": 2287.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -288.0,
+              "max": 236.0
+            },
+            "features.8": {
+              "images": 0,
+              "values": 0,
+              "min": -76.0,
+              "max": 62.0
+            },
+            "features.11": {
+              "images": 0,
+              "values": 0,
+              "min": -154.0,
+              "max": 114.0
+            },
+            "features.16": {
+              "images": 0,
+              "values": 0,
+              "min": -77.0,
+              "max": 87.0
+            },
+            "features.19": {
+              "images": 128,
+              "values": 175,
+              "min": -455.0,
+              "max": 413.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -37.0,
+              "max": 31.0
+            },
+            "classifier.4": {
+              "images": 0,
+              "values": 0,
+              "min": -169.0,
+              "max": 121.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -388.0,
+              "max": 299.0
+            }
+          }
+        },
+        "classifier.0": {
+          "n": 128,
+          "images_with_overflow": 0,
+          "frac_with_overflow": 0.0,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -2387.0,
+              "max": 2413.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -283.0,
+              "max": 210.0
+            },
+            "features.8": {
+              "images": 0,
+              "values": 0,
+              "min": -72.0,
+              "max": 69.0
+            },
+            "features.11": {
+              "images": 0,
+              "values": 0,
+              "min": -154.0,
+              "max": 107.0
+            },
+            "features.16": {
+              "images": 0,
+              "values": 0,
+              "min": -76.0,
+              "max": 91.0
+            },
+            "features.19": {
+              "images": 0,
+              "values": 0,
+              "min": -195.0,
+              "max": 186.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -55.0,
+              "max": 52.0
+            },
+            "classifier.4": {
+              "images": 0,
+              "values": 0,
+              "min": -194.0,
+              "max": 117.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -383.0,
+              "max": 288.0
+            }
+          }
+        },
+        "classifier.4": {
+          "n": 128,
+          "images_with_overflow": 1,
+          "frac_with_overflow": 0.0078125,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -2363.0,
+              "max": 2300.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -298.0,
+              "max": 208.0
+            },
+            "features.8": {
+              "images": 0,
+              "values": 0,
+              "min": -69.0,
+              "max": 63.0
+            },
+            "features.11": {
+              "images": 0,
+              "values": 0,
+              "min": -130.0,
+              "max": 100.0
+            },
+            "features.16": {
+              "images": 0,
+              "values": 0,
+              "min": -81.0,
+              "max": 73.0
+            },
+            "features.19": {
+              "images": 0,
+              "values": 0,
+              "min": -171.0,
+              "max": 157.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -40.0,
+              "max": 32.0
+            },
+            "classifier.4": {
+              "images": 1,
+              "values": 1,
+              "min": -261.0,
+              "max": 132.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -341.0,
+              "max": 314.0
+            }
+          }
+        },
+        "classifier.8": {
+          "n": 128,
+          "images_with_overflow": 0,
+          "frac_with_overflow": 0.0,
+          "layers": {
+            "features.0": {
+              "images": 0,
+              "values": 0,
+              "min": -2346.0,
+              "max": 2306.0
+            },
+            "features.3": {
+              "images": 0,
+              "values": 0,
+              "min": -285.0,
+              "max": 230.0
+            },
+            "features.8": {
+              "images": 0,
+              "values": 0,
+              "min": -77.0,
+              "max": 61.0
+            },
+            "features.11": {
+              "images": 0,
+              "values": 0,
+              "min": -161.0,
+              "max": 100.0
+            },
+            "features.16": {
+              "images": 0,
+              "values": 0,
+              "min": -89.0,
+              "max": 79.0
+            },
+            "features.19": {
+              "images": 0,
+              "values": 0,
+              "min": -171.0,
+              "max": 143.0
+            },
+            "classifier.0": {
+              "images": 0,
+              "values": 0,
+              "min": -36.0,
+              "max": 33.0
+            },
+            "classifier.4": {
+              "images": 0,
+              "values": 0,
+              "min": -179.0,
+              "max": 125.0
+            },
+            "classifier.8": {
+              "images": 0,
+              "values": 0,
+              "min": -443.0,
+              "max": 324.0
+            }
+          }
+        }
+      },
+      "frac_with_overflow": 0.22916666666666666
+    }
+  },
+  "time_sec": 5.7
+}

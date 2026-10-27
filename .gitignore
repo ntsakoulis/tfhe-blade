@@ -1,0 +1,9 @@
+# Checkpoints and data are distributed through the GitHub release / Zenodo
+*.pth
+*.pt
+*.tar
+data/
+__pycache__/
+*.pyc
+terminal_logs/
+*.out

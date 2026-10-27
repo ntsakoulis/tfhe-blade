@@ -1,0 +1,328 @@
+{
+  "tag": "Zama_VGG9_cadv_W2_A2_IN8_Rnd6",
+  "method": "zama_vgg9_dense",
+  "ckpt": "/home/nasos/concrete-ml/use_case_examples/cifar/cifar_brevitas_training/experiments/CNV_2W2A_2W2A_20221114_131345/checkpoints/best.tar",
+  "setting": {
+    "w": 2,
+    "a": 2,
+    "inp": 8,
+    "narrow": true,
+    "signed_act": true
+  },
+  "checkpoint_selected_on": "test",
+  "time": "2026-10-12 07:54",
+  "cpu_count": 20,
+  "torch_threads": 12,
+  "acc_torch_test": 0.8873,
+  "B_cert_global": 13,
+  "B_emp_global": 13,
+  "pbs_theory": 158336,
+  "pbs_theory_per_act": {
+    "conv_features.3": 57600,
+    "conv_features.6": 50176,
+    "conv_features.8": 12544,
+    "conv_features.11": 18432,
+    "conv_features.14": 12800,
+    "conv_features.16": 3200,
+    "conv_features.19": 2304,
+    "conv_features.22": 256,
+    "linear_features.2": 512,
+    "linear_features.5": 512
+  },
+  "train": null,
+  "layers": [
+    {
+      "name": "conv_features.1",
+      "kind": "conv",
+      "fan_in": 27,
+      "out_ch": 64,
+      "in_max": 128.0,
+      "K_mean": 23.90625,
+      "K_max": 27,
+      "K_min": 14,
+      "L1_mean": 23.90625,
+      "L1_max": 27.0,
+      "B_cert_max": 13,
+      "B_cert_mean": 12.984375,
+      "int_sparsity": 0.11458331346511841,
+      "w_int_max": 1,
+      "B_emp": 13,
+      "int_residual": 0.0
+    },
+    {
+      "name": "conv_features.4",
+      "kind": "conv",
+      "fan_in": 576,
+      "out_ch": 64,
+      "in_max": 1.0,
+      "K_mean": 382.9375,
+      "K_max": 421,
+      "K_min": 322,
+      "L1_mean": 382.9375,
+      "L1_max": 421.0,
+      "B_cert_max": 10,
+      "B_cert_mean": 10.0,
+      "int_sparsity": 0.3351779580116272,
+      "w_int_max": 1,
+      "B_emp": 10,
+      "int_residual": 0.0
+    },
+    {
+      "name": "conv_features.9",
+      "kind": "conv",
+      "fan_in": 576,
+      "out_ch": 128,
+      "in_max": 1.0,
+      "K_mean": 367.6796875,
+      "K_max": 412,
+      "K_min": 294,
+      "L1_mean": 367.6796875,
+      "L1_max": 412.0,
+      "B_cert_max": 10,
+      "B_cert_mean": 10.0,
+      "int_sparsity": 0.3616672158241272,
+      "w_int_max": 1,
+      "B_emp": 9,
+      "int_residual": 0.0
+    },
+    {
+      "name": "conv_features.12",
+      "kind": "conv",
+      "fan_in": 1152,
+      "out_ch": 128,
+      "in_max": 1.0,
+      "K_mean": 712.21875,
+      "K_max": 765,
+      "K_min": 655,
+      "L1_mean": 712.21875,
+      "L1_max": 765.0,
+      "B_cert_max": 11,
+      "B_cert_mean": 11.0,
+      "int_sparsity": 0.3817545771598816,
+      "w_int_max": 1,
+      "B_emp": 10,
+      "int_residual": 0.0
+    },
+    {
+      "name": "conv_features.17",
+      "kind": "conv",
+      "fan_in": 1152,
+      "out_ch": 256,
+      "in_max": 1.0,
+      "K_mean": 682.125,
+      "K_max": 750,
+      "K_min": 619,
+      "L1_mean": 682.125,
+      "L1_max": 750.0,
+      "B_cert_max": 11,
+      "B_cert_mean": 11.0,
+      "int_sparsity": 0.4078776240348816,
+      "w_int_max": 1,
+      "B_emp": 9,
+      "int_residual": 0.0
+    },
+    {
+      "name": "conv_features.20",
+      "kind": "conv",
+      "fan_in": 2304,
+      "out_ch": 256,
+      "in_max": 1.0,
+      "K_mean": 1319.28515625,
+      "K_max": 1406,
+      "K_min": 1230,
+      "L1_mean": 1319.28515625,
+      "L1_max": 1406.0,
+      "B_cert_max": 12,
+      "B_cert_mean": 12.0,
+      "int_sparsity": 0.4273936152458191,
+      "w_int_max": 1,
+      "B_emp": 10,
+      "int_residual": 0.0
+    },
+    {
+      "name": "linear_features.0",
+      "kind": "fc",
+      "fan_in": 256,
+      "out_ch": 512,
+      "in_max": 1.0,
+      "K_mean": 155.400390625,
+      "K_max": 177,
+      "K_min": 114,
+      "L1_mean": 155.400390625,
+      "L1_max": 177.0,
+      "B_cert_max": 9,
+      "B_cert_mean": 8.9921875,
+      "int_sparsity": 0.39296722412109375,
+      "w_int_max": 1,
+      "B_emp": 8,
+      "int_residual": 0.0
+    },
+    {
+      "name": "linear_features.3",
+      "kind": "fc",
+      "fan_in": 512,
+      "out_ch": 512,
+      "in_max": 1.0,
+      "K_mean": 305.294921875,
+      "K_max": 343,
+      "K_min": 253,
+      "L1_mean": 305.294921875,
+      "L1_max": 343.0,
+      "B_cert_max": 10,
+      "B_cert_mean": 9.994140625,
+      "int_sparsity": 0.4037208557128906,
+      "w_int_max": 1,
+      "B_emp": 9,
+      "int_residual": 0.0
+    },
+    {
+      "name": "linear_features.6",
+      "kind": "fc",
+      "fan_in": 512,
+      "out_ch": 10,
+      "in_max": 1.0,
+      "K_mean": 387.6000061035156,
+      "K_max": 416,
+      "K_min": 367,
+      "L1_mean": 387.6000061035156,
+      "L1_max": 416.0,
+      "B_cert_max": 10,
+      "B_cert_mean": 10.0,
+      "int_sparsity": 0.24296873807907104,
+      "w_int_max": 1,
+      "B_emp": 10,
+      "int_residual": 0.0
+    }
+  ],
+  "rounding_bits": 6,
+  "compile_s": 111.3,
+  "B_meas": 17,
+  "pbs": 158346,
+  "complexity": 144893578884282.0,
+  "circuit_stats": {
+    "size_of_secret_keys": 96168,
+    "size_of_bootstrap_keys": 825229312,
+    "size_of_keyswitch_keys": 587530240,
+    "p_error": 8.930374021597854e-13,
+    "global_p_error": 1.5111719917485283e-08,
+    "complexity": 144893578884282.0,
+    "size_of_inputs": 73728,
+    "size_of_outputs": 655440,
+    "programmable_bootstrap_count": 158346,
+    "key_switch_count": 158346,
+    "packing_key_switch_count": 0,
+    "clear_addition_count": 300948,
+    "encrypted_addition_count": 64311040,
+    "clear_multiplication_count": 64311040,
+    "encrypted_negation_count": 0
+  },
+  "pbs_per_parameter": {
+    "BootstrapKeyParam(polynomial_size=8192, glwe_dimension=1, input_lwe_dimension=903, level=3, base_log=11, variance=0.000000)": 142602,
+    "BootstrapKeyParam(polynomial_size=2048, glwe_dimension=1, input_lwe_dimension=878, level=2, base_log=15, variance=0.000000)": 15744
+  },
+  "circuit_layers": {
+    "/linear_features.6/MatMul": {
+      "acc_bits": 17,
+      "acc_min": -19558,
+      "acc_max": 39497
+    },
+    "/linear_features.3/MatMul": {
+      "acc_bits": 16,
+      "acc_min": -26162,
+      "acc_max": 26289
+    },
+    "/linear_features.0/MatMul": {
+      "acc_bits": 16,
+      "acc_min": -19050,
+      "acc_max": 15494
+    },
+    "/conv_features.20/Conv": {
+      "acc_bits": 11,
+      "acc_min": -653,
+      "acc_max": 592
+    },
+    "/conv_features.17/Conv": {
+      "acc_bits": 10,
+      "acc_min": -377,
+      "acc_max": 339
+    },
+    "/conv_features.15/AveragePool": {
+      "acc_bits": 4,
+      "acc_min": -4,
+      "acc_max": 4
+    },
+    "/conv_features.12/Conv": {
+      "acc_bits": 10,
+      "acc_min": -368,
+      "acc_max": 388
+    },
+    "/conv_features.9/Conv": {
+      "acc_bits": 9,
+      "acc_min": -208,
+      "acc_max": 194
+    },
+    "/conv_features.7/AveragePool": {
+      "acc_bits": 4,
+      "acc_min": -4,
+      "acc_max": 4
+    },
+    "/conv_features.4/Conv": {
+      "acc_bits": 10,
+      "acc_min": -337,
+      "acc_max": 363
+    },
+    "/conv_features.1/Conv": {
+      "acc_bits": 13,
+      "acc_min": -3273,
+      "acc_max": 3261
+    }
+  },
+  "sim": {
+    "n": 10000,
+    "acc_disable": 0.8506,
+    "acc_sim": 0.8431,
+    "disagree_sim_vs_disable": 0.1096
+  },
+  "overflow": {
+    "compiled": {
+      "linear_features.6": 17,
+      "linear_features.3": 16,
+      "linear_features.0": 16,
+      "conv_features.20": 11,
+      "conv_features.17": 10,
+      "conv_features.12": 10,
+      "conv_features.9": 9,
+      "conv_features.4": 10,
+      "conv_features.1": 13
+    },
+    "B_cert": {
+      "conv_features.1": 13,
+      "conv_features.4": 10,
+      "conv_features.9": 10,
+      "conv_features.12": 11,
+      "conv_features.17": 11,
+      "conv_features.20": 12,
+      "linear_features.0": 9,
+      "linear_features.3": 10,
+      "linear_features.6": 10
+    },
+    "natural": {
+      "n": 10000,
+      "images_with_overflow": 0,
+      "frac_with_overflow": 0.0,
+      "per_layer": {}
+    },
+    "adversarial": {
+      "n": 1152,
+      "images_with_overflow": 0,
+      "frac_with_overflow": 0.0,
+      "per_layer": {}
+    },
+    "sim_check": {
+      "n_overflow": 0,
+      "n_clean": 1152,
+      "disagree_overflow": null,
+      "disagree_clean": 0.13802083333333334
+    }
+  }
+}

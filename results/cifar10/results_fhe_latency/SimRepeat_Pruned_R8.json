@@ -1,0 +1,53 @@
+{
+ "tag": "Pruned_R8",
+ "rounding": 8,
+ "n": 1000,
+ "reps": 5,
+ "labels_exec": [
+  0,
+  1,
+  2
+ ],
+ "disable_exec": [
+  0,
+  1,
+  2
+ ],
+ "sim_exec": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   8,
+   1,
+   2
+  ]
+ ],
+ "acc_sim_runs": [
+  0.87,
+  0.872,
+  0.873,
+  0.874,
+  0.864
+ ],
+ "disagree_sim_vs_sim_mean": 0.0707,
+ "frac_images_unstable": 0.139,
+ "disagree_sim_vs_disable_mean": 0.06620000000000001
+}

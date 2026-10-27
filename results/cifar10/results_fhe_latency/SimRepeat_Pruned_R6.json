@@ -1,0 +1,53 @@
+{
+ "tag": "Pruned_R6",
+ "rounding": 6,
+ "n": 1000,
+ "reps": 5,
+ "labels_exec": [
+  0,
+  1,
+  2
+ ],
+ "disable_exec": [
+  0,
+  9,
+  2
+ ],
+ "sim_exec": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   7
+  ],
+  [
+   0,
+   1,
+   2
+  ]
+ ],
+ "acc_sim_runs": [
+  0.861,
+  0.863,
+  0.854,
+  0.861,
+  0.861
+ ],
+ "disagree_sim_vs_sim_mean": 0.0962,
+ "frac_images_unstable": 0.185,
+ "disagree_sim_vs_disable_mean": 0.0994
+}
