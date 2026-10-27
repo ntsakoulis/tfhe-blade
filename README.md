@@ -1,6 +1,6 @@
-# BLADE: Bootstrapping-Lean and Audited Deployment of Encrypted CNNs with TFHE
+# BLADE: PBS-Cost-Aware Pruning and Accumulator Auditing for Encrypted CNN Inference with TFHE
 
-Code for the paper *BLADE: Bootstrapping-Lean and Audited Deployment of Encrypted CNNs with TFHE* (IEEE Access, under review).
+Code for the paper *BLADE: PBS-Cost-Aware Pruning and Accumulator Auditing for Encrypted CNN Inference with TFHE* (IEEE Access, under review).
 
 BLADE has two parts:
 
@@ -95,7 +95,7 @@ The JSON files behind every table are in `results/`.
 ```bibtex
 @article{tsakoulis2026blade,
   author  = {Tsakoulis, Thanasis},
-  title   = {{BLADE}: Bootstrapping-Lean and Audited Deployment of Encrypted {CNNs} with {TFHE}},
+  title   = {{BLADE}: PBS-Cost-Aware Pruning and Accumulator Auditing for Encrypted {CNN} Inference with {TFHE}},
   journal = {IEEE Access},
   year    = {2026},
   note    = {under review}
